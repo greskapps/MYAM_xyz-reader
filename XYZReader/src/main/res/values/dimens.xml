@@ -20,7 +20,7 @@
     <dimen name="view_padding">8dp</dimen>
 
     <integer name="max_lines">2</integer>
-
+    <integer name="angle_delta">90</integer>
 
 
 </resources>

@@ -20,8 +20,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:scaleType="centerCrop"
-                />
-//              foreground or background needed?
+                android:foreground="@drawable/gradient"
+                android:background="@drawable/image_base" />
 
             <LinearLayout
                 android:id="@+id/meta_bar"

@@ -22,4 +22,5 @@
     <color name="colorPrimaryDark">#7B1FA2</color>
     <color name="colorAccent">#448AFF</color>
     <color name="dkgray">#212121</color>
+    <color name="ltgray">#ffe0e0e0</color>
 </resources>

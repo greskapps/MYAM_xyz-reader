@@ -13,7 +13,13 @@
             android:id="@+id/thumbnail"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:scaleType="centerCrop" />
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:foreground="@drawable/gradient"
+            android:background="@drawable/image_base" />
 
         <TextView
             android:id="@+id/article_title"
@@ -21,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/title_margin"
             android:layout_marginEnd="@dimen/title_margin"
-            android:textColor="@color/dkgray"
+            android:textColor="@color/ltgray"
             android:ellipsize="end"
             android:maxLines="@integer/max_lines"
             android:textAppearance="@style/TextAppearance.AppCompat.Title"
@@ -36,6 +42,7 @@
             android:layout_marginBottom="@dimen/text_spacing"
             android:layout_marginStart="@dimen/text_spacing"
             android:layout_marginEnd="@dimen/card_margin"
+            android:textColor="@color/ltgray"
             android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
             android:ellipsize="end"
             android:maxLines="@integer/max_lines"
