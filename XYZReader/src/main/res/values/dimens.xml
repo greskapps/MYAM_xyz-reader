@@ -16,11 +16,11 @@
     <dimen name="detail_activity_padding">8dp</dimen>
     <dimen name="text_spacing">12dp</dimen>
     <dimen name="title_margin">12dp</dimen>
-    <dimen name="toolbar_height">16dp</dimen>
+    <dimen name="toolbar_height">64dp</dimen>
     <dimen name="view_padding">8dp</dimen>
 
     <integer name="max_lines">2</integer>
-    <integer name="angle_delta">90</integer>
+    <integer name="gradient_angle">90</integer>
 
 
 </resources>
