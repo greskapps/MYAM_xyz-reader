@@ -1,0 +1,465 @@
+10-27 23:47:41.424 5422-5422/? I/wpa_supplicant: environment dirty rate=0 [103][0][0]
+10-27 23:47:41.424 2443-2706/? D/WifiStateMachine: fetchRssiLinkSpeedAndFrequencyNative abnormalRssiCnt = 0
+10-27 23:47:41.424 2443-2706/? D/WifiStateMachine: fetchRssiLinkSpeedAndFrequencyNative rssi=-55 linkspeed=72 freq=2412
+10-27 23:47:41.424 2443-2706/? E/HtcWifiRssiMonitor: newrssi =-55 , oldRssi= -57
+10-27 23:47:41.464 2443-2600/? W/SensorService: D/Accel(x, y, z, t) = ( -1.2,   9.1,   3.8, 514623219ms), calendar = 1540698461, sys_time = 514623219ms
+10-27 23:47:42.184 2443-3177/? I/ActivityManager: START u0 {act=android.intent.action.VIEW dat=content: cmp=com.example.xyzreader/.ui.ArticleDetailActivity} from uid 10202 pid 24616 on display 0
+10-27 23:47:42.184 2443-3177/? D/PMS: acquireWL(667e213): PARTIAL_WAKE_LOCK  *launch* 0x1 2443 1000 WorkSource{10202}
+10-27 23:47:42.204 2443-3246/? D/HtcSystemUPManager: HtcSystemUPolicy [canLog (default)] category: launch, enable: true
+10-27 23:47:42.224 24616-24616/com.example.xyzreader E/AndroidRuntime: FATAL EXCEPTION: main
+    Process: com.example.xyzreader, PID: 24616
+    java.lang.RuntimeException: Unable to start activity ComponentInfo{com.example.xyzreader/com.example.xyzreader.ui.ArticleDetailActivity}: android.view.InflateException: Binary XML file line #1: Binary XML file line #1: Error inflating class CoordinatorLayout
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2509)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2569)
+        at android.app.ActivityThread.access$900(ActivityThread.java:150)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1399)
+        at android.os.Handler.dispatchMessage(Handler.java:102)
+        at android.os.Looper.loop(Looper.java:168)
+        at android.app.ActivityThread.main(ActivityThread.java:5885)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:797)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:687)
+     Caused by: android.view.InflateException: Binary XML file line #1: Binary XML file line #1: Error inflating class CoordinatorLayout
+        at android.view.LayoutInflater.inflate(LayoutInflater.java:539)
+        at android.view.LayoutInflater.inflate(LayoutInflater.java:423)
+        at android.view.LayoutInflater.inflate(LayoutInflater.java:374)
+        at android.support.v7.app.AppCompatDelegateImplV9.setContentView(AppCompatDelegateImplV9.java:287)
+        at android.support.v7.app.AppCompatActivity.setContentView(AppCompatActivity.java:139)
+        at com.example.xyzreader.ui.ArticleDetailActivity.onCreate(ArticleDetailActivity.java:50)
+        at android.app.Activity.performCreate(Activity.java:6262)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1125)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2462)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2569) 
+        at android.app.ActivityThread.access$900(ActivityThread.java:150) 
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1399) 
+        at android.os.Handler.dispatchMessage(Handler.java:102) 
+        at android.os.Looper.loop(Looper.java:168) 
+        at android.app.ActivityThread.main(ActivityThread.java:5885) 
+        at java.lang.reflect.Method.invoke(Native Method) 
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:797) 
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:687) 
+     Caused by: android.view.InflateException: Binary XML file line #1: Error inflating class CoordinatorLayout
+        at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:776)
+        at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:704)
+        at android.view.LayoutInflater.inflate(LayoutInflater.java:492)
+        at android.view.LayoutInflater.inflate(LayoutInflater.java:423) 
+        at android.view.LayoutInflater.inflate(LayoutInflater.java:374) 
+        at android.support.v7.app.AppCompatDelegateImplV9.setContentView(AppCompatDelegateImplV9.java:287) 
+        at android.support.v7.app.AppCompatActivity.setContentView(AppCompatActivity.java:139) 
+        at com.example.xyzreader.ui.ArticleDetailActivity.onCreate(ArticleDetailActivity.java:50) 
+        at android.app.Activity.performCreate(Activity.java:6262) 
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1125) 
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2462) 
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2569) 
+        at android.app.ActivityThread.access$900(ActivityThread.java:150) 
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1399) 
+        at android.os.Handler.dispatchMessage(Handler.java:102) 
+        at android.os.Looper.loop(Looper.java:168) 
+        at android.app.ActivityThread.main(ActivityThread.java:5885) 
+        at java.lang.reflect.Method.invoke(Native Method) 
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:797) 
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:687) 
+     Caused by: java.lang.ClassNotFoundException: Didn't find class "android.view.CoordinatorLayout" on path: DexPathList[[zip file "/data/app/com.example.xyzreader-1/base.apk"],nativeLibraryDirectories=[/data/app/com.example.xyzreader-1/lib/arm, /vendor/lib, /system/lib]]
+        at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:56)
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:511)
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:469)
+        at android.view.LayoutInflater.createView(LayoutInflater.java:583)
+        at android.view.LayoutInflater.onCreateView(LayoutInflater.java:677)
+        at com.android.internal.policy.PhoneLayoutInflater.onCreateView(PhoneLayoutInflater.java:68)
+        at android.view.LayoutInflater.onCreateView(LayoutInflater.java:694)
+        at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:762)
+        at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:704) 
+        at android.view.LayoutInflater.inflate(LayoutInflater.java:492) 
+        at android.view.LayoutInflater.inflate(LayoutInflater.java:423) 
+        at android.view.LayoutInflater.inflate(LayoutInflater.java:374) 
+        at android.support.v7.app.AppCompatDelegateImplV9.setContentView(AppCompatDelegateImplV9.java:287) 
+        at android.support.v7.app.AppCompatActivity.setContentView(AppCompatActivity.java:139) 
+        at com.example.xyzreader.ui.ArticleDetailActivity.onCreate(ArticleDetailActivity.java:50) 
+        at android.app.Activity.performCreate(Activity.java:6262) 
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1125) 
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2462) 
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2569) 
+        at android.app.ActivityThread.access$900(ActivityThread.java:150) 
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1399) 
+        at android.os.Handler.dispatchMessage(Handler.java:102) 
+        at android.os.Looper.loop(Looper.java:168) 
+        at android.app.ActivityThread.main(ActivityThread.java:5885) 
+        at java.lang.reflect.Method.invoke(Native Method) 
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:797) 
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:687) 
+    	Suppressed: java.lang.ClassNotFoundException: android.view.CoordinatorLayout
+        at java.lang.Class.classForName(Native Method)
+        at java.lang.BootClassLoader.findClass(ClassLoader.java:781)
+        at java.lang.BootClassLoader.loadClass(ClassLoader.java:841)
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:504)
+        		... 25 more
+     Caused by: java.lang.NoClassDefFoundError: Class not found using the boot class loader; no stack trace available
+10-27 23:47:42.224 2443-3188/? E/ActivityManager: App crashed! Process: com.example.xyzreader
+10-27 23:47:42.224 2443-3188/? W/ActivityManager:   Force finishing activity com.example.xyzreader/.ui.ArticleDetailActivity
+10-27 23:47:42.224 2443-24722/? I/DropBoxManagerService: Usage (1281) > Quota (1280)
+10-27 23:47:42.234 2443-3188/? D/PMS: acquireWL(667e213): PARTIAL_WAKE_LOCK  *launch* 0x1 2443 1000 WorkSource{10202}
+10-27 23:47:42.234 2443-3188/? W/ActivityManager:   Force finishing activity com.example.xyzreader/.ui.ArticleListActivity
+10-27 23:47:42.254 2443-2462/? D/PMS: acquireWL(5de60bd): PARTIAL_WAKE_LOCK  Framework 0x1 10781 10056 null
+10-27 23:47:42.264 3591-23387/? D/WifiManager: getScanResults: Base Package Name=com.htc.wfcservice, uid=2903
+10-27 23:47:42.264 3591-23387/? D/WFCService: updateWifiNotification scanResult: 0
+10-27 23:47:42.284 2443-2541/? D/StatusBarManagerService: setSystemUiVisibility(0x8000)
+10-27 23:47:42.284 2443-2541/? D/StatusBarManagerService: disable:userId=0 what=0x0 which=0x1 pkg=
+10-27 23:47:42.284 2824-2824/? I/PhoneStatusBar: updatePolicy(false,false,false,true)
+10-27 23:47:42.284 2443-2541/? D/StatusBarManagerService: hiding MENU key
+10-27 23:47:42.414 2443-2461/? D/PMS: acquireWL(c97e5f3): PARTIAL_WAKE_LOCK  CMWakeLock 0x1 8221 10016 WorkSource{10016 com.google.android.gms}
+10-27 23:47:42.414 2443-3210/? D/PMS: releaseWL(c97e5f3): PARTIAL_WAKE_LOCK  CMWakeLock 0x1 WorkSource{10016 com.google.android.gms}
+10-27 23:47:42.444 2443-3795/? D/PMS: acquireWL(1af22b0): PARTIAL_WAKE_LOCK  CMWakeLock 0x1 8221 10016 WorkSource{10016 com.google.android.gms}
+10-27 23:47:42.464 2443-3486/? D/PMS: releaseWL(1af22b0): PARTIAL_WAKE_LOCK  CMWakeLock 0x1 WorkSource{10016 com.google.android.gms}
+10-27 23:47:42.484 2443-3198/? D/PMS: acquireWL(8439529): PARTIAL_WAKE_LOCK  CMWakeLock 0x1 8221 10016 WorkSource{10016 com.google.android.gms}
+10-27 23:47:42.484 2443-3210/? D/PMS: releaseWL(8439529): PARTIAL_WAKE_LOCK  CMWakeLock 0x1 WorkSource{10016 com.google.android.gms}
+10-27 23:47:42.494 2443-24729/? D/HtcWifiDataStallTracker: mIsWifiConnected true mIsDhcpActive false supplicantStateCOMPLETED mOldWifiDisplayStatus 0mIsRoutingComplete true
+10-27 23:47:42.574 8221-8231/? I/art: Background partial concurrent mark sweep GC freed 224292(10MB) AllocSpace objects, 5(156KB) LOS objects, 38% free, 25MB/41MB, paused 3.205ms total 227.540ms
+10-27 23:47:42.614 14733-14758/? I/Finsky: [26624] com.google.android.finsky.bo.ad.run(6): Stats for Executor: BlockingExecutor com.google.android.finsky.bo.ae@2eed665[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 6]
+10-27 23:47:42.614 14733-14758/? I/Finsky: [26624] com.google.android.finsky.bo.ad.run(6): Stats for Executor: LightweightExecutor com.google.android.finsky.bo.ae@c223f3a[Running, pool size = 3, active threads = 0, queued tasks = 0, completed tasks = 46]
+10-27 23:47:42.734 2443-2540/? W/ActivityManager: Activity pause timeout for ActivityRecord{4d94a4d u0 com.example.xyzreader/.ui.ArticleDetailActivity t42517 f}
+10-27 23:47:42.734 2443-3246/? D/HtcSystemUPManager: HtcSystemUPolicy [canLog (default)] category: launch, enable: true
+10-27 23:47:42.744 23919-23919/? W/PrismDragLayer: performFitSystemWindowsIfNeed: null, ic: null
+10-27 23:47:42.744 23919-23919/? I/FeedHostManager: [onResume]
+10-27 23:47:42.744 23919-23919/? I/FeedProviderManager: onResume
+10-27 23:47:42.744 23919-23919/? I/FeedSevenDaysNotification: disable Notification promotion
+10-27 23:47:42.744 23919-24575/? I/SocialFeedProvider: +onResume
+10-27 23:47:42.744 23919-24575/? I/SocialFeedProvider: updateAccounts - Accounts is no change
+10-27 23:47:42.744 23919-24575/? I/SocialFeedProvider: -onResume
+10-27 23:47:42.744 23919-23919/? I/ContextualWidget: onResume
+10-27 23:47:42.744 23919-23919/? I/ContextualWidget: notifyWidgetActive location size=0 user consent location=false
+10-27 23:47:42.744 23919-24088/? I/ContextualWidget: handleMessage, what=1018 mode=WorkTime maxcount=8
+10-27 23:47:42.754 23919-23919/? I/ContextualWidget: ignore uploadUsageData location=false usage data=false  allowAutoUpload=true
+10-27 23:47:42.754 23919-23919/? I/Launcher: LauncherPostResume
+10-27 23:47:42.754 23919-23919/? I/FeedHostManagerProxy: setActivityPostResumed true
+10-27 23:47:42.784 2824-2824/? I/PhoneStatusBar: updatePolicy(false,false,false,true)
+10-27 23:47:42.784 2443-2541/? D/StatusBarManagerService: setSystemUiVisibility(0x80008000)
+10-27 23:47:42.784 2443-2541/? D/StatusBarManagerService: disable:userId=0 what=0x0 which=0x1 pkg=
+10-27 23:47:42.784 2443-2541/? D/StatusBarManagerService: hiding MENU key
+10-27 23:47:42.794 2443-3485/? D/PMS: releaseWL(667e213): PARTIAL_WAKE_LOCK  *launch* 0x1 WorkSource{2897}
+10-27 23:47:43.254 3591-23387/? D/WifiManager: getScanResults: Base Package Name=com.htc.wfcservice, uid=2903
+10-27 23:47:43.254 3591-23387/? D/WFCService: updateWifiNotification scanResult: 0
+10-27 23:47:43.324 10781-10844/? W/SQLiteCursor: Close cursor android.database.sqlite.SQLiteCursor@880678 on null twice or more
+10-27 23:47:43.334 23919-24149/? W/OpenGLRenderer: Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+10-27 23:47:43.334 23919-24149/? W/OpenGLRenderer: Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+10-27 23:47:43.364 10781-10844/? W/SQLiteCursor: Close cursor android.database.sqlite.SQLiteCursor@488dab7 on null twice or more
+10-27 23:47:43.374 2443-2461/? D/PMS: releaseWL(5de60bd): PARTIAL_WAKE_LOCK  Framework 0x1 null
+10-27 23:47:43.494 2443-2600/? W/SensorService: D/Accel(x, y, z, t) = ( -1.1,   8.9,   4.3, 514625249ms), calendar = 1540698463, sys_time = 514625249ms
+10-27 23:47:43.754 2824-2824/? I/RecentsTaskLoadPlan: icon(42517,96,96)
+10-27 23:47:43.754 2443-3210/? D/ActivityManager: getTaskThumbnailLocked mainThumbnail is null, TaskRecord{5d897c8 #42517 A=com.example.xyzreader U=0 sz=2}
+10-27 23:47:43.754 2824-2824/? D/RecentsTaskLoadPlan: thumbnail is null
+10-27 23:47:44.044 14733-14758/? I/Finsky: [26624] com.google.android.finsky.bo.ad.run(6): Stats for Executor: bgExecutor com.google.android.finsky.bo.ae@ab4c7eb[Running, pool size = 4, active threads = 0, queued tasks = 0, completed tasks = 9]
+10-27 23:47:44.254 10781-10844/? W/SQLiteCursor: Close cursor android.database.sqlite.SQLiteCursor@a466b53 on null twice or more
+10-27 23:47:44.254 10781-10844/? W/SQLiteCursor: Close cursor android.database.sqlite.SQLiteCursor@9e12c90 on null twice or more
+10-27 23:47:44.254 3591-23387/? D/WifiManager: getScanResults: Base Package Name=com.htc.wfcservice, uid=2903
+10-27 23:47:44.254 3591-23387/? D/WFCService: updateWifiNotification scanResult: 0
+10-27 23:47:44.434 5422-5422/? I/wpa_supplicant: environment dirty rate=1 [105][2][0]
+10-27 23:47:44.434 2443-2706/? D/WifiStateMachine: fetchRssiLinkSpeedAndFrequencyNative abnormalRssiCnt = 0
+10-27 23:47:44.434 2443-2706/? D/WifiStateMachine: fetchRssiLinkSpeedAndFrequencyNative rssi=-54 linkspeed=72 freq=2412
+10-27 23:47:44.434 2443-2706/? E/HtcWifiRssiMonitor: newrssi =-54 , oldRssi= -55
+10-27 23:47:45.124 10781-10844/? W/SQLiteCursor: Close cursor android.database.sqlite.SQLiteCursor@36ab545 on null twice or more
+10-27 23:47:45.164 10781-10844/? W/SQLiteCursor: Close cursor android.database.sqlite.SQLiteCursor@145fda8 on null twice or more
+10-27 23:47:45.254 3591-23387/? D/WifiManager: getScanResults: Base Package Name=com.htc.wfcservice, uid=2903
+10-27 23:47:45.254 3591-23387/? D/WFCService: updateWifiNotification scanResult: 0
+10-27 23:47:45.524 2443-2600/? W/SensorService: D/Accel(x, y, z, t) = ( -0.8,   8.8,   4.6, 514627279ms), calendar = 1540698465, sys_time = 514627279ms
+10-27 23:47:46.254 3591-23387/? D/WifiManager: getScanResults: Base Package Name=com.htc.wfcservice, uid=2903
+10-27 23:47:46.254 3591-23387/? D/WFCService: updateWifiNotification scanResult: 0
+10-27 23:47:46.294 2824-2947/? I/IntentController: receive(android.provider.Telephony.SPN_STRINGS_UPDATED,1,false)
+10-27 23:47:46.294 3197-3197/? D/AccFlag: sense_version=7.0
+10-27 23:47:46.294 3197-3197/? D/AccFlag: sense 7.0, sku_id=11
+10-27 23:47:46.294 3197-3197/? D/AccFlag: radio_type: 4
+10-27 23:47:46.294 3197-3197/? D/AccFlag: radio_type: 4
+10-27 23:47:46.294 3197-3197/? D/AccFlag: radio_type: 4
+10-27 23:47:46.314 2443-2536/? D/GpsLocationProvider: [handleMessage] SUBSCRIPTION_OR_SIM_CHANGED
+10-27 23:47:46.314 2443-2443/? D/PMS: acquireWL(827c061): PARTIAL_WAKE_LOCK  GpsLocationProvider 0x1 2443 1000 null
+10-27 23:47:46.314 2443-2536/? D/GpsLocationProvider: received SIM related action: 
+10-27 23:47:46.314 3197-3957/? D/AccFlag: sense_version=7.0
+10-27 23:47:46.314 3197-3957/? D/AccFlag: sense 7.0, sku_id=11
+10-27 23:47:46.324 3197-3197/? D/MccTable: updateMccMncConfiguration mccmnc='310260' fromServiceState=true
+10-27 23:47:46.314 3197-3957/? D/AccFlag: radio_type: 4
+10-27 23:47:46.314 3197-3957/? D/AccFlag: radio_type: 4
+10-27 23:47:46.314 3197-3957/? D/AccFlag: radio_type: 4
+10-27 23:47:46.314 410-19433/? W/AudioFlg: setParameters(): Voice vsid=268443648;call_state=1
+10-27 23:47:46.324 410-7261/? W/AudioFlg: setParameters(): Voice vsid=281026560;call_state=1
+10-27 23:47:46.324 3197-3197/? D/MccTable: updateMccMncConfiguration defaultMccMnc=310260
+10-27 23:47:46.324 3197-3197/? D/MccTable: updateMccMncConfiguration: mcc=310, mnc=260
+10-27 23:47:46.324 3197-3197/? D/MccTable: defaultLanguageForMcc(310): country us uses en
+10-27 23:47:46.324 3197-3197/? D/MccTable: getLocaleFromMcc(en, us, 310
+10-27 23:47:46.334 3197-3209/? D/AccFlag: sense_version=7.0
+10-27 23:47:46.334 2443-2536/? D/PMS: releaseWL(827c061): PARTIAL_WAKE_LOCK  GpsLocationProvider 0x1 null
+10-27 23:47:46.334 3197-3209/? D/AccFlag: sense 7.0, sku_id=11
+10-27 23:47:46.334 2443-2536/? D/GpsLocationProvider: SIM MCC/MNC is available: 310260
+10-27 23:47:46.334 3197-3209/? D/AccFlag: radio_type: 4
+10-27 23:47:46.334 3197-3209/? D/AccFlag: radio_type: 4
+10-27 23:47:46.334 3197-3209/? D/AccFlag: radio_type: 4
+10-27 23:47:46.344 3197-3709/? D/AccFlag: sense_version=7.0
+10-27 23:47:46.344 3197-3709/? D/AccFlag: sense 7.0, sku_id=11
+10-27 23:47:46.344 3197-3709/? D/AccFlag: radio_type: 4
+10-27 23:47:46.344 3197-3709/? D/AccFlag: radio_type: 4
+10-27 23:47:46.344 3197-3709/? D/AccFlag: radio_type: 4
+10-27 23:47:46.354 4127-4127/? D/MdScPhnSt: [48f.1.2.]  listen, callback - (remain -) tmr3e8
+10-27 23:47:46.364 2824-2824/? D/CarrierLabel: Action : android.provider.Telephony.SPN_STRINGS_UPDATED
+10-27 23:47:46.364 2824-2824/? D/CarrierLabel: ShowSpn = false, Spn = null, ShowPlmn = true, Plmn = T-Mobile, UnregisteredSIM = false, UnregisteredSIMCode = 0
+10-27 23:47:46.364 2824-2824/? D/CarrierLabel: ServiceStatus = 2, SimState = UNKNOWN, airplane = 0
+10-27 23:47:46.364 3197-3197/? D/MccTable: getLocaleForLanguageCountry: got perfect match: en-US
+10-27 23:47:46.364 3197-3197/? D/WifiManager: setCountryCode: Base Package Name=com.android.phone, uid=1001
+10-27 23:47:46.364 3197-3197/? D/MccTable: WIFI_COUNTRY_CODE set to us
+10-27 23:47:46.364 2443-3166/? I/WifiService: WifiService trying to set country code to us with persist set to true
+10-27 23:47:46.374 3591-3591/? I/WFCService: onServiceStateChanged, serviceState=0
+10-27 23:47:46.374 2443-2443/? D/WifiService: @onServiceStateChanged: 0 0 voice home data home T-Mobile T-Mobile 310260 T-Mobile T-Mobile 310260  LTE IWLAN CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=falseEriInd= -1EriMode= -1RadioPowerSv: false EmergOnly=false PhoneType: 1 IMSRegState: -1
+10-27 23:47:46.374 2443-2443/? D/WifiService: MCC after camp network: 310
+10-27 23:47:46.374 2443-2443/? D/WifiService: WIFI_COUNTRY_CODE set to us after camp network
+10-27 23:47:46.374 2443-2443/? I/WifiService: WifiService trying to set country code to us with persist set to true
+10-27 23:47:46.374 2443-2443/? D/HtcASN_1.1: onServiceStateChanged...
+10-27 23:47:46.384 2824-2824/? D/TelephonyCallback: ServiceState: 0 LTE 0 IWLAN 1 1
+10-27 23:47:46.384 2824-2824/? D/StatusBar.NetworkController: dumpState[0 0 0 18 false UNKNOWN 11]
+10-27 23:47:46.384 2824-2824/? D/SIGNAL_ICON: level=0/5
+10-27 23:47:46.394 2824-2824/? D/DATA_ICON: dataConnected: false/false  mMobileDataEnabled : false
+10-27 23:47:46.404 2824-2824/? D/StatusBar.NetworkController: dumpIcon[(gone) stat_sys_5signal_0|null stat_sys_wifi_signal_inandout_4 (gone) F]
+10-27 23:47:46.404 2824-2947/? I/IntentController: receive(android.intent.action.SERVICE_STATE,1,false)
+10-27 23:47:46.414 3197-2939/? D/AccFlag: sense_version=7.0
+10-27 23:47:46.414 3197-2939/? D/AccFlag: sense 7.0, sku_id=11
+10-27 23:47:46.414 2443-2443/? D/GpsLocationProvider: ServiceState.STATE_IN_SERVICE
+10-27 23:47:46.414 2443-2443/? D/HtcASN_1.1: Keep  0: type=Wi-Fi mSimExist=true mFlightMode=false HtcLevel=5
+10-27 23:47:46.424 3591-3591/? D/WFCService: onSignalStrengthsChanged
+10-27 23:47:46.424 2443-2443/? D/HtcASN_1.1: onSignalStrengthsChanged...
+10-27 23:47:46.434 23302-23362/? D/FlexNetRA: ActionA>android.intent.action.SERVICE_STATE
+10-27 23:47:46.434 3197-2939/? D/AccFlag: radio_type: 4
+10-27 23:47:46.434 3197-2939/? D/AccFlag: radio_type: 4
+10-27 23:47:46.434 3197-2939/? D/AccFlag: radio_type: 4
+10-27 23:47:46.434 23398-24764/? D/AutoSettingApp: receiver - intent: android.intent.action.SERVICE_STATE
+10-27 23:47:46.444 23398-23398/? D/HtcNLPSwitchReceiver: onReceive(): android.intent.action.SERVICE_STATE
+10-27 23:47:46.454 2824-2824/? D/TelephonyCallback: SignalStrength: 1
+10-27 23:47:46.454 2824-2824/? D/SIGNAL_ICON: level=1/5
+10-27 23:47:46.454 2824-2824/? D/StatusBar.NetworkController: dumpIcon[(gone) stat_sys_5signal_1|null stat_sys_wifi_signal_inandout_4 (gone) F]
+10-27 23:47:46.454 3591-3591/? D/WFCService: onSignalStrengthsChanged
+10-27 23:47:46.484 2824-2824/? D/TelephonyCallback: SignalStrength: 4
+10-27 23:47:46.484 2824-2824/? D/SIGNAL_ICON: level=4/5
+10-27 23:47:46.484 23398-24764/? W/Settings: Setting device_provisioned has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+10-27 23:47:46.484 2824-2824/? D/StatusBar.NetworkController: dumpIcon[(gone) stat_sys_5signal_4|null stat_sys_wifi_signal_inandout_4 (gone) F]
+10-27 23:47:46.484 2824-2824/? D/CarrierLabel: Action : android.intent.action.SERVICE_STATE
+10-27 23:47:46.484 2824-2824/? D/CarrierLabel: combined = 0, cs = 0, network type = 18
+10-27 23:47:46.484 2824-2824/? D/CarrierLabel: ServiceStatus = 0, SimState = UNKNOWN, airplane = 0
+10-27 23:47:46.484 2824-2824/? D/CarrierLabel: updateNetworkName showSpn=false spn=null showPlmn=true plmn=T-Mobile
+10-27 23:47:46.494 2443-2536/? I/LocationManagerService: remove 43ae399 Reciever[43ae399 listener UpdateRecord[passive android(1000) Request[POWER_NONE passive fastest=0]]]
+10-27 23:47:46.494 2443-2443/? D/HtcASN_1.1: Keep  0: type=Wi-Fi mSimExist=true mFlightMode=false HtcLevel=5
+10-27 23:47:46.494 2443-2443/? D/HtcASN_1.1: onSignalStrengthsChanged...
+10-27 23:47:46.494 2443-2536/? D/LocationManagerService: provider request: passive ProviderRequest[ON interval=0]
+10-27 23:47:46.514 23302-23362/? D/FlexNetS: setSimCardisWhiteList: false
+10-27 23:47:46.514 23302-23362/? D/FlexNetS: setCampNetworkisBlackList: false
+10-27 23:47:46.534 2443-2443/? D/HtcASN_1.1: Keep  0: type=Wi-Fi mSimExist=true mFlightMode=false HtcLevel=5
+10-27 23:47:46.534 3197-3197/? I/Telephony: PstnIncomingCallNotifier: Unregistering: Handler (com.android.internal.telephony.gsm.GSMPhone) {b0764f7}
+10-27 23:47:46.544 3197-24788/? I/MmsService: MmsConfigManager loads in background mcc/mnc: 310/260
+10-27 23:47:46.544 3197-24788/? D/AccFlag: sense_version=7.0
+10-27 23:47:46.544 3197-24788/? D/AccFlag: sense 7.0, sku_id=11
+10-27 23:47:46.544 3197-24788/? D/AccFlag: radio_type: 4
+10-27 23:47:46.544 3197-24788/? D/AccFlag: radio_type: 4
+10-27 23:47:46.544 3197-24788/? D/AccFlag: radio_type: 4
+10-27 23:47:46.554 23398-23398/? D/AutoSettingApp: service - onCreate()
+10-27 23:47:46.554 3197-3197/? D/AccFlag: sense_version=7.0
+10-27 23:47:46.554 3197-3197/? D/AccFlag: sense 7.0, sku_id=11
+10-27 23:47:46.554 3197-3197/? D/AccFlag: radio_type: 4
+10-27 23:47:46.554 3197-3197/? D/AccFlag: radio_type: 4
+10-27 23:47:46.564 3197-3197/? D/AccFlag: radio_type: 4
+10-27 23:47:46.564 21514-21514/? D/AutoSettingHSP: receiver - onReceive() isWeatherAppMigrate is true
+10-27 23:47:46.564 21514-21514/? D/HtcNLPSwitchReceiver: onReceive() isWeatherAppMigrate is true
+10-27 23:47:46.574 3197-24788/? D/HtcMessageCustomizationManager: Original customization: Bundle[{httpSocketTimeout=60000, aliasMinChars=2, smsToMmsTextThreshold=-1, enableSMSDeliveryReports=true, maxMessageTextSize=-1, supportMmsContentDisposition=true, enabledTransID=false, aliasEnabled=false, supportHttpCharsetHeader=false, allowAttachAudio=true, smsToMmsTextLengthThreshold=-1, recipientLimit=2147483647, uaProfTagName=x-wap-profile, aliasMaxChars=48, maxImageHeight=480, enableMMSDeliveryReports=false, userAgent=, config_cellBroadcastAppLinks=true, maxSubjectLength=40, httpParams=, enableGroupMms=true, emailGatewayNumber=, maxMessageSize=307200, naiSuffix=, enableMMSReadReports=false, maxImageWidth=640, uaProfUrl=, enabledMMS=true, enabledNotifyWapMMSC=false, sendMultipartSmsAsSeparateMessages=false, enableMultipartSMS=true}]
+10-27 23:47:46.574 23302-23362/? D/FlexNetS: setSimCardisWhiteList: true
+10-27 23:47:46.584 21064-23745/? D/MmsCustomizationProvider: query uri: content://htc-mms-customization/mms-sie
+10-27 23:47:46.584 3197-3197/? I/Telephony: AccountEntry: updateVideoPauseSupport -- mcc/mnc for sub: {id=1, iccId=890126040XXXXXXXXXXX simSlotIndex=0 displayName=CARD 1 carrierName=T-Mobile nameSource=0 iconTint=-16746133 dataRoaming=0 iconBitmap=android.graphics.Bitmap@68efd42 mcc 310 mnc 260}
+10-27 23:47:46.584 21064-23745/? D/MmsCustomizationProvider: sieCust: true
+10-27 23:47:46.584 21064-23745/? D/MmsCustomizationProvider: mmsDeliverReport: 1, mmsReadReport: 1, smsDeliveryReport: 1, mmsMaxSize: 1000K, mmsMaxRecipientNumber: 20, smsMaxConcatenatedNumber: 12, smsEmailServerNumber: 313, mmsMdnHeader: 
+10-27 23:47:46.584 3197-24788/? D/HtcMessageCustomizationManager: SIE customization
+10-27 23:47:46.594 23398-24792/? D/HtcNLPSwitchReceiver: setResourceByMCC : 310
+10-27 23:47:46.594 23398-24792/? D/HtcNLPSwitchReceiver: Already using Google
+10-27 23:47:46.594 2443-2611/? I/Telecom: PhoneAccountRegistrar: [ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, [3c803d783c8c08c1ea13ee41c8cf4f3d014676a3], UserHandle{0}(icon: Icon(typ=BITMAP size=38x48) -> Icon(typ=BITMAP size=38x48))(lbl: T-Mobile -> )(desc: T-Mobile -> )]
+10-27 23:47:46.604 3197-24788/? D/HtcMessageCustomizationManager: Max MMS size: 1024000
+10-27 23:47:46.604 2443-2611/? I/Telecom: : Sending phone-account intent as user
+10-27 23:47:46.604 3197-3197/? I/Telephony: AccountEntry: Registered phoneAccount: [[ ] PhoneAccount: ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, [3c803d783c8c08c1ea13ee41c8cf4f3d014676a3], UserHandle{0} Capabilities: 54 Schemes: tel voicemail ] with handle: ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, [3c803d783c8c08c1ea13ee41c8cf4f3d014676a3], UserHandle{0}
+10-27 23:47:46.604 3197-3197/? I/Telephony: PstnIncomingCallNotifier: Registering: Handler (com.android.internal.telephony.gsm.GSMPhone) {b0764f7}
+10-27 23:47:46.604 3197-24788/? D/MessageAccCustomizeFlag: sense_version=7.0
+10-27 23:47:46.604 21064-23745/? D/MmsCustomizationProvider: query uri: content://htc-mms-customization/mms-ua/ua_string
+10-27 23:47:46.614 3197-24788/? D/MessageAccCustomizeFlag: sense_version=7.0
+10-27 23:47:46.614 2443-3486/? W/Telecom: : No account found for the calling user
+10-27 23:47:46.614 21064-23745/? D/MmsCustomizationProvider: query uri: content://htc-mms-customization/mms-ua/ua_profile
+10-27 23:47:46.624 3197-3197/? D/HtcTelephonyInternal: CMD_GET_ALL_IMSI
+10-27 23:47:46.624 3197-3197/? I/Telephony: PstnIncomingCallNotifier: Unregistering: Handler (com.android.internal.telephony.gsm.GSMPhone) {b0764f7}
+10-27 23:47:46.634 3197-24788/? W/SystemReader: Cannot find framework_mms_is_support_mms, use default value instead
+10-27 23:47:46.634 3197-24788/? D/MessageCustFlag: sense_version=7.0
+10-27 23:47:46.634 3197-24788/? D/MessageCustFlag: sku_id=11
+10-27 23:47:46.634 3197-24788/? D/MessageCustFlag: sku_id=11
+10-27 23:47:46.634 3197-24788/? D/MessageCustFlag: sku_id=11
+10-27 23:47:46.634 3197-24788/? D/MessageCustFlag: sku_id=11
+10-27 23:47:46.634 3197-24788/? D/MessageCustFlag: sense_version=7.0
+10-27 23:47:46.634 3197-24788/? D/MessageCustFlag: sku_id=11
+10-27 23:47:46.634 3197-24788/? D/HtcMessageCustomizationManager: Htc customization: Bundle[{httpSocketTimeout=60000, aliasMinChars=2, smsToMmsTextThreshold=12, enableSMSDeliveryReports=true, maxMessageTextSize=-1, supportMmsContentDisposition=true, enabledTransID=false, aliasEnabled=false, supportHttpCharsetHeader=false, allowAttachAudio=true, smsToMmsTextLengthThreshold=-1, recipientLimit=20, uaProfTagName=x-wap-profile, aliasMaxChars=48, maxImageHeight=480, enableMMSDeliveryReports=true, userAgent=HTC_Desire_530/1.0, config_cellBroadcastAppLinks=true, maxSubjectLength=40, httpParams=, enableGroupMms=true, emailGatewayNumber=313, maxMessageSize=1024000, naiSuffix=, enableMMSReadReports=true, maxImageWidth=640, uaProfUrl=http://www.htcmms.com.tw/Android/TMOUS/RFwk2UtVif/ua-profile.xml, enabledMMS=true, enabledNotifyWapMMSC=false, sendMultipartSmsAsSeparateMessages=false, enableMultipartSMS=true}]
+10-27 23:47:46.634 23398-23398/? D/AutoSettingApp: Util - isAllowedToUseNetwork true, before Android M
+10-27 23:47:46.634 23398-23398/? D/AutoSettingApp: service - onStartCommand() action: com.htc.app.autosetting.timezoneupdate
+10-27 23:47:46.634 23398-23398/? D/AutoSettingApp: service - onStartCommand() check timezone in 60000
+10-27 23:47:46.634 23398-24793/? D/AutoSettingApp: service - Handler - handle: VERIFY_LOCATION_COUNTRY
+10-27 23:47:46.634 23398-24793/? D/AutoSettingApp: service - mHandler: verify location country
+10-27 23:47:46.644 3197-3197/? D/AccFlag: sense_version=7.0
+10-27 23:47:46.644 3197-3197/? D/AccFlag: sense 7.0, sku_id=11
+10-27 23:47:46.644 3197-3197/? D/AccFlag: radio_type: 4
+10-27 23:47:46.644 3197-3197/? D/AccFlag: radio_type: 4
+10-27 23:47:46.644 3197-3197/? D/AccFlag: radio_type: 4
+10-27 23:47:46.654 3197-3197/? I/Telephony: AccountEntry: updateVideoPauseSupport -- mcc/mnc for sub: {id=1, iccId=890126040XXXXXXXXXXX simSlotIndex=0 displayName=CARD 1 carrierName=T-Mobile nameSource=0 iconTint=-16746133 dataRoaming=0 iconBitmap=android.graphics.Bitmap@1797faf mcc 310 mnc 260}
+10-27 23:47:46.664 2443-2611/? I/Telecom: PhoneAccountRegistrar: [ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, [3c803d783c8c08c1ea13ee41c8cf4f3d014676a3], UserHandle{0}(icon: Icon(typ=BITMAP size=38x48) -> Icon(typ=BITMAP size=38x48))]
+10-27 23:47:46.664 2443-2611/? I/Telecom: : Sending phone-account intent as user
+10-27 23:47:46.674 3197-3197/? I/Telephony: AccountEntry: Registered phoneAccount: [[ ] PhoneAccount: ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, [3c803d783c8c08c1ea13ee41c8cf4f3d014676a3], UserHandle{0} Capabilities: 54 Schemes: tel voicemail ] with handle: ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, [3c803d783c8c08c1ea13ee41c8cf4f3d014676a3], UserHandle{0}
+10-27 23:47:46.674 3197-3197/? I/Telephony: PstnIncomingCallNotifier: Registering: Handler (com.android.internal.telephony.gsm.GSMPhone) {b0764f7}
+10-27 23:47:46.694 4127-24760/? D/MdScSerSt: [48f.2.] state 11 update *1 for 1/1 in 7ms "0A" (0G)1:310260H2c0:U -> (0G)1:310260H0c0+13:310260H0+18 1:19ms
+10-27 23:47:46.694 2443-3210/? W/Telecom: : No account found for the calling user
+10-27 23:47:46.704 2824-2824/? D/TelephonyCallback: SignalStrength: 4
+10-27 23:47:46.704 2443-2443/? D/HtcASN_1.1: onSignalStrengthsChanged...
+10-27 23:47:46.704 3591-3591/? D/WFCService: onSignalStrengthsChanged
+10-27 23:47:46.704 2824-2824/? D/SIGNAL_ICON: level=4/5
+10-27 23:47:46.704 2824-2824/? D/StatusBar.NetworkController: dumpIcon[(gone) stat_sys_5signal_4|null stat_sys_wifi_signal_inandout_4 (gone) F]
+10-27 23:47:46.714 2443-2443/? D/HtcASN_1.1: Keep  0: type=Wi-Fi mSimExist=true mFlightMode=false HtcLevel=5
+10-27 23:47:46.724 4127-24761/? D/TelephonyManager: getDataEnabled: retVal=false
+10-27 23:47:46.724 2443-2611/? I/Telecom: PhoneAccountRegistrar: [ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, [3c803d783c8c08c1ea13ee41c8cf4f3d014676a3], UserHandle{0}(icon: Icon(typ=BITMAP size=38x48) -> Icon(typ=BITMAP size=38x48))]
+10-27 23:47:46.724 2443-2611/? I/Telecom: : Sending phone-account intent as user
+10-27 23:47:46.744 2443-3104/? I/Telecom: PhoneAccountRegistrar: [ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, [3c803d783c8c08c1ea13ee41c8cf4f3d014676a3], UserHandle{0}(icon: Icon(typ=BITMAP size=38x48) -> Icon(typ=BITMAP size=38x48))]
+10-27 23:47:46.744 2443-3104/? I/Telecom: : Sending phone-account intent as user
+10-27 23:47:46.754 2443-3128/? D/PMS: acquireWL(2ddc7c2): PARTIAL_WAKE_LOCK  GCoreFlp 0x1 8221 10016 WorkSource{10016 com.google.android.gms}
+10-27 23:47:46.764 2824-2824/? D/TelephonyCallback: ServiceState: 0 LTE 0 LTE -1 1
+10-27 23:47:46.764 2443-2443/? D/WifiService: @onServiceStateChanged: 0 0 voice home data home T-Mobile T-Mobile 310260 T-Mobile T-Mobile 310260  LTE LTE CSS not supported -1 -1 RoamInd=-1 DefRoamInd=-1 EmergOnly=false IsDataRoamingFromRegistration=falseEriInd= -1EriMode= -1RadioPowerSv: false EmergOnly=false PhoneType: 1 IMSRegState: -1
+10-27 23:47:46.764 2824-2824/? D/StatusBar.NetworkController: dumpState[0 0 0 13 false UNKNOWN 11]
+10-27 23:47:46.764 2443-2443/? D/WifiService: MCC after camp network: 310
+10-27 23:47:46.764 3591-3591/? I/WFCService: onServiceStateChanged, serviceState=0
+10-27 23:47:46.764 2443-2443/? D/WifiService: WIFI_COUNTRY_CODE set to us after camp network
+10-27 23:47:46.764 2443-2443/? I/WifiService: WifiService trying to set country code to us with persist set to true
+10-27 23:47:46.764 2443-2443/? D/HtcASN_1.1: onServiceStateChanged...
+10-27 23:47:46.774 2824-2824/? D/DATA_ICON: LTE_CA = false
+10-27 23:47:46.774 2824-2824/? D/SIGNAL_ICON: level=4/5
+10-27 23:47:46.774 8221-8413/? W/GCoreFlp: No location to return for getLastLocation()
+10-27 23:47:46.774 8221-8413/? W/GCoreFlp: No location to return for getLastLocation()
+10-27 23:47:46.784 2443-2461/? D/PMS: releaseWL(2ddc7c2): PARTIAL_WAKE_LOCK  GCoreFlp 0x1 WorkSource{10016 com.google.android.gms}
+10-27 23:47:46.784 2443-2443/? D/GpsLocationProvider: ServiceState.STATE_IN_SERVICE
+10-27 23:47:46.784 2443-2443/? D/HtcASN_1.1: Keep  0: type=Wi-Fi mSimExist=true mFlightMode=false HtcLevel=4
+10-27 23:47:46.794 2824-2947/? I/IntentController: receive(android.intent.action.SERVICE_STATE,1,false)
+10-27 23:47:46.794 2824-2824/? D/DATA_ICON: dataConnected: false/false  mMobileDataEnabled : false
+10-27 23:47:46.794 2824-2824/? D/StatusBar.NetworkController: dumpIcon[(gone) stat_sys_5signal_4|null stat_sys_wifi_signal_inandout_4 (gone) F]
+10-27 23:47:46.794 2443-2461/? D/PMS: acquireWL(d5759d3): PARTIAL_WAKE_LOCK  NlpWakeLock 0x1 8221 10016 null
+10-27 23:47:46.804 23302-23362/? D/FlexNetRA: ActionA>android.intent.action.SERVICE_STATE
+10-27 23:47:46.804 2443-3487/? D/PMS: releaseWL(d5759d3): PARTIAL_WAKE_LOCK  NlpWakeLock 0x1 null
+10-27 23:47:46.804 2443-3210/? D/PMS: acquireWL(7c1b910): PARTIAL_WAKE_LOCK  GCoreFlp 0x1 8221 10016 WorkSource{10016 com.google.android.gms}
+10-27 23:47:46.814 8221-8413/? W/GCoreFlp: No location to return for getLastLocation()
+10-27 23:47:46.814 2824-2824/? D/TelephonyCallback: DataState: 0
+10-27 23:47:46.814 2824-2824/? D/StatusBar.NetworkController: dumpState[0 0 0 13 false UNKNOWN 11]
+10-27 23:47:46.814 2443-3487/? D/PMS: acquireWL(63edc09): PARTIAL_WAKE_LOCK  GCoreFlp 0x1 8221 10016 null
+10-27 23:47:46.814 2443-3796/? D/PMS: acquireWL(3b3c02f): PARTIAL_WAKE_LOCK  GCoreFlp 0x1 8221 10016 WorkSource{10016 com.google.android.gms}
+10-27 23:47:46.814 2443-3128/? D/PMS: releaseWL(7c1b910): PARTIAL_WAKE_LOCK  GCoreFlp 0x1 WorkSource{10016 com.google.android.gms}
+10-27 23:47:46.824 2443-2611/? D/PMS: releaseWL(63edc09): PARTIAL_WAKE_LOCK  GCoreFlp 0x1 null
+10-27 23:47:46.824 2443-3486/? D/PMS: acquireWL(b71563c): PARTIAL_WAKE_LOCK  GCoreFlp 0x1 8221 10016 WorkSource{10016 com.google.android.gms}
+10-27 23:47:46.824 23398-24820/? D/AutoSettingApp: receiver - intent: android.intent.action.SERVICE_STATE
+10-27 23:47:46.824 2443-3795/? D/PMS: releaseWL(3b3c02f): PARTIAL_WAKE_LOCK  GCoreFlp 0x1 WorkSource{10016 com.google.android.gms}
+10-27 23:47:46.824 2443-2611/? D/PMS: releaseWL(b71563c): PARTIAL_WAKE_LOCK  GCoreFlp 0x1 WorkSource{10016 com.google.android.gms}
+10-27 23:47:46.834 10781-10781/? D/ConnectivityManager: getMobileDataEnabled()+ subId=1
+10-27 23:47:46.834 2824-2824/? D/DATA_ICON: dataConnected: false/false  mMobileDataEnabled : false
+10-27 23:47:46.834 2824-2824/? D/StatusBar.NetworkController: dumpIcon[(gone) stat_sys_5signal_4|null stat_sys_wifi_signal_inandout_4 (gone) F]
+10-27 23:47:46.834 10781-10781/? D/ConnectivityManager: getMobileDataEnabled()- subId=1 retVal=false
+10-27 23:47:46.834 23398-23398/? D/HtcNLPSwitchReceiver: onReceive(): android.intent.action.SERVICE_STATE
+10-27 23:47:46.834 23398-24820/? W/Settings: Setting device_provisioned has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+10-27 23:47:46.844 2824-2824/? D/CarrierLabel: Action : android.intent.action.SERVICE_STATE
+10-27 23:47:46.844 2824-2824/? D/CarrierLabel: combined = 0, cs = 0, network type = 13
+10-27 23:47:46.844 2824-2824/? D/CarrierLabel: ServiceStatus = 0, SimState = UNKNOWN, airplane = 0
+10-27 23:47:46.844 2824-2824/? D/CarrierLabel: updateNetworkName showSpn=false spn=null showPlmn=true plmn=T-Mobile
+10-27 23:47:46.854 2443-3166/? D/PMS: acquireWL(5f02fc5): PARTIAL_WAKE_LOCK  Framework 0x1 10781 10056 null
+10-27 23:47:46.874 2443-2461/? D/PMS: releaseWL(5f02fc5): PARTIAL_WAKE_LOCK  Framework 0x1 null
+10-27 23:47:46.884 4127-4127/? D/MdScPhnSt: [911.1.]  listen, callback - (remain -) tmr3e8
+10-27 23:47:46.924 21514-21514/? D/AutoSettingHSP: receiver - onReceive() isWeatherAppMigrate is true
+10-27 23:47:46.924 21514-21514/? D/HtcNLPSwitchReceiver: onReceive() isWeatherAppMigrate is true
+10-27 23:47:46.934 23398-24825/? D/HtcNLPSwitchReceiver: setResourceByMCC : 310
+10-27 23:47:46.934 23398-24825/? D/HtcNLPSwitchReceiver: Already using Google
+10-27 23:47:46.934 23302-23362/? D/FlexNetRA: ActionA>android.intent.action.ANY_DATA_STATE
+10-27 23:47:46.954 21488-21500/? D/MdProvGlob: remove item 101 (p2d15in111) for 15:android.intent.action.ANY_DATA_STATE
+10-27 23:47:46.954 4127-24822/? D/MdScDataSum: [911.2.] summary 11:p2 ignore
+10-27 23:47:46.964 23302-23362/? D/cosmo: reset slot key
+10-27 23:47:46.974 23302-23362/? D/FlexNetS: updateSvcAllowedInSettings:true
+10-27 23:47:46.974 23302-23362/? D/FlexNetRA: ActionA>android.intent.action.ANY_DATA_STATE
+10-27 23:47:46.984 23302-23362/? D/cosmo: reset slot key
+10-27 23:47:46.994 4127-24828/? D/TelephonyManager: getDataEnabled: retVal=false
+10-27 23:47:46.994 23302-23362/? D/FlexNetS: updateSvcAllowedInSettings:true
+10-27 23:47:46.994 23302-23362/? D/FlexNetRA: ActionA>android.intent.action.ANY_DATA_STATE
+10-27 23:47:47.004 23302-23362/? D/cosmo: reset slot key
+10-27 23:47:47.014 23302-23362/? D/FlexNetS: updateSvcAllowedInSettings:true
+10-27 23:47:47.014 23302-23362/? D/FlexNetRA: ActionA>android.intent.action.ANY_DATA_STATE
+10-27 23:47:47.024 23302-23362/? D/cosmo: reset slot key
+10-27 23:47:47.034 23302-23362/? D/FlexNetS: updateSvcAllowedInSettings:true
+10-27 23:47:47.034 23302-23362/? D/FlexNetRA: ActionA>android.intent.action.ANY_DATA_STATE
+10-27 23:47:47.044 23302-23362/? D/cosmo: reset slot key
+10-27 23:47:47.054 23302-23362/? D/FlexNetS: updateSvcAllowedInSettings:true
+10-27 23:47:47.054 23302-23362/? D/FlexNetRA: ActionA>android.intent.action.ANY_DATA_STATE
+10-27 23:47:47.064 23302-23362/? D/cosmo: reset slot key
+10-27 23:47:47.064 23302-23362/? D/FlexNetS: updateSvcAllowedInSettings:true
+10-27 23:47:47.064 23302-23362/? D/FlexNetRA: ActionA>android.intent.action.ANY_DATA_STATE
+10-27 23:47:47.074 23302-23362/? D/cosmo: reset slot key
+10-27 23:47:47.084 23302-23362/? D/FlexNetS: updateSvcAllowedInSettings:true
+10-27 23:47:47.084 23302-23362/? D/FlexNetRA: ActionA>android.intent.action.ANY_DATA_STATE
+10-27 23:47:47.094 23302-23362/? D/cosmo: reset slot key
+10-27 23:47:47.094 23302-23362/? D/FlexNetS: updateSvcAllowedInSettings:true
+10-27 23:47:47.094 23302-23362/? D/FlexNetRA: ActionA>android.intent.action.ANY_DATA_STATE
+10-27 23:47:47.104 23302-23362/? D/cosmo: reset slot key
+10-27 23:47:47.114 23302-23362/? D/FlexNetS: updateSvcAllowedInSettings:true
+10-27 23:47:47.264 3591-23387/? D/WifiManager: getScanResults: Base Package Name=com.htc.wfcservice, uid=2903
+10-27 23:47:47.264 3591-23387/? D/WFCService: updateWifiNotification scanResult: 0
+10-27 23:47:47.454 5422-5422/? I/wpa_supplicant: environment dirty rate=0 [108][0][0]
+10-27 23:47:47.454 2443-2706/? D/WifiStateMachine: fetchRssiLinkSpeedAndFrequencyNative abnormalRssiCnt = 0
+10-27 23:47:47.454 2443-2706/? D/WifiStateMachine: fetchRssiLinkSpeedAndFrequencyNative rssi=-54 linkspeed=72 freq=2412
+10-27 23:47:47.454 2443-2706/? E/HtcWifiRssiMonitor: newrssi =-54 , oldRssi= -54
+10-27 23:47:47.504 2443-24830/? D/HtcWifiDataStallTracker: mIsWifiConnected true mIsDhcpActive false supplicantStateCOMPLETED mOldWifiDisplayStatus 0mIsRoutingComplete true
+10-27 23:47:47.554 2443-2600/? W/SensorService: D/Accel(x, y, z, t) = ( -1.2,   8.9,   4.7, 514629309ms), calendar = 1540698467, sys_time = 514629309ms
+10-27 23:47:48.254 3591-23387/? D/WifiManager: getScanResults: Base Package Name=com.htc.wfcservice, uid=2903
+10-27 23:47:48.254 3591-23387/? D/WFCService: updateWifiNotification scanResult: 0
+10-27 23:47:48.424 2443-2665/? D/PMS: acquireWL(7a90341): PARTIAL_WAKE_LOCK  NetworkStats 0x1 2443 1000 null
+10-27 23:47:48.514 2443-2665/? I/TetherStatsReporting: getTetherStats() called NetworkStats: elapsedRealtime=514630180
+      [0] iface=v4-rmnet_data1 uid=0 set=DEFAULT tag=0x0 rxBytes=0 rxPackets=0 txBytes=192 txPackets=2 operations=0
+      [1] iface=v4-rmnet_data1 uid=0 set=FOREGROUND tag=0x0 rxBytes=0 rxPackets=0 txBytes=0 txPackets=0 operations=0
+      [2] iface=rmnet_data1 uid=0 set=DEFAULT tag=0x0 rxBytes=1510 rxPackets=16 txBytes=2321 txPackets=33 operations=0
+      [3] iface=rmnet_data1 uid=0 set=FOREGROUND tag=0x0 rxBytes=0 rxPackets=0 txBytes=0 txPackets=0 operations=0
+      [4] iface=v4-rmnet_data0 uid=0 set=DEFAULT tag=0x0 rxBytes=41020 rxPackets=953 txBytes=244095 txPackets=1167 operations=0
+      [5] iface=v4-rmnet_data0 uid=0 set=FOREGROUND tag=0x0 rxBytes=0 rxPackets=0 txBytes=0 txPackets=0 operations=0
+      [6] iface=v4-rmnet_data0 uid=1000 set=DEFAULT tag=0x0 rxBytes=0 rxPackets=0 txBytes=480 txPackets=8 operations=0
+      [7] iface=v4-rmnet_data0 uid=1000 set=FOREGROUND tag=0x0 rxBytes=0 rxPackets=0 txBytes=0 txPackets=0 operations=0
+      [8] iface=v4-rmnet_data0 uid=2897 set=DEFAULT tag=0x0 rxBytes=120 rxPackets=2 txBytes=6800 txPackets=22 operations=0
+      [9] iface=v4-rmnet_data0 uid=2897 set=FOREGROUND tag=0x0 rxBytes=0 rxPackets=0 txBytes=0 txPackets=0 operations=0
+      [10] iface=v4-rmnet_data0 uid=10016 set=DEFAULT tag=0x0 rxBytes=34860 rxPackets=581 txBytes=1345006 txPackets=6992 operations=0
+      [11] iface=v4-rmnet_data0 uid=10016 set=FOREGROUND tag=0x0 rxBytes=2280 rxPackets=38 txBytes=83608 txPackets=459 operations=0
+      [12] iface=v4-rmnet_data0 uid=10066 set=DEFAULT tag=0x0 rxBytes=1080 rxPackets=18 txBytes=32262 txPackets=174 operations=0
+      [13] iface=v4-rmnet_data0 uid=10066 set=FOREGROUND tag=0x0 rxBytes=0 rxPackets=0 txBytes=0 txPackets=0 operations=0
+      [14] iface=v4-rmnet_data0 uid=10075 set=DEFAULT tag=0x0 rxBytes=0 rxPackets=0 txBytes=248 txPackets=4 operations=0
+      [15] iface=v4-rmnet_data0 uid=10075 set=FOREGROUND tag=0x0 rxBytes=0 rxPackets=0 txBytes=0 txPackets=0 operations=0
+      [16] iface=v4-rmnet_data0 uid=10087 set=DEFAULT tag=0x0 rxBytes=420 rxPackets=7 txBytes=16888 txPackets=75 operations=0
+      [17] iface=v4-rmnet_data0 uid=10087 set=FOREGROUND tag=0x0 rxBytes=0 rxPackets=0 txBytes=0 txPackets=0 operations=0
+      [18] iface=v4-rmnet_data0 uid=10091 set=DEFAULT tag=0x0 rxBytes=1080 rxPackets=18 txBytes=28548 txPackets=162 operations=0
+      [19] iface=v4-rmnet_data0 uid=10091 set=FOREGROUND tag=0x0 rxBytes=0 rxPackets=0 txBytes=0 txPackets=0 operations=0
+      [20] iface=v4-rmnet_data0 uid=10101 set=DEFAULT tag=0x0 rxBytes=4140 rxPackets=69 txBytes=152969 txPackets=752 operations=0
+      [21] iface=v4-rmnet_data0 uid=10101 set=FOREGROUND tag=0x0 rxBytes=600 rxPackets=10 txBytes=22310 txPackets=110 operations=0
+      [22] iface=v4-rmnet_data0 uid=10104 set=DEFAULT tag=0x0 rxBytes=1140 rxPackets=19 txBytes=32187 txPackets=188 operations=0
+      [23] iface=v4-rmnet_data0 uid=10104 set=FOREGROUND tag=0x0 rxBytes=0 rxPackets=0 txBytes=0 txPackets=0 operations=0
+      [24] iface=v4-rmnet_data0 uid=10114 set=DEFAULT tag=0x0 rxBytes=480 rxPackets=8 txBytes=14368 txPackets=88 operations=0
+      [25] iface=v4-rmnet_data0 uid=10114 set=FOREGROUND tag=0x0 rxBytes=0 rxPackets=0 txBytes=0 txPackets=0 operations=0
+      [26] iface=v4-rmnet_data0 uid=10115 set=DEFAULT tag=0x0 rxBytes=840 rxPackets=14 txBytes=11397 txPackets=97 operations=0
+      [27] iface=v4-rmnet_data0 uid=10115 set=FOREGROUND tag=0x0 rxBytes=0 rxPackets=0 txBytes=0 txPackets=0 operations=0
+      [28] iface=v4-rmnet_data0 uid=10117 set=DEFAULT tag=0x0 rxBytes=1140 rxPackets=19 txBytes=22508 txPackets=151 operations=0
+      [29] iface=v4-rmnet_data0 uid=10117 set=FOREGROUND tag=0x0 rxBytes=0 rxPackets=0 txBytes=0 txPackets=0 operations=0
+      [30] iface=v4-rmnet_data0 uid=10126 set=DEFAULT tag=0x0 rxBytes=2100 rxPackets=35 txBytes=83833 txPackets=362 operations=0
+      [31] iface=v4-rmnet_data0 uid=10126 set=FOREGROUND tag=0x0 rxBytes=0 rxPackets=0 txBytes=0 txPackets=0 operations=0
+      [32] iface=v4-rmnet_data0 uid=10135 set=DEFAULT tag=0x0 rxBytes=360 rxPackets=6 txBytes=31398 txPackets=66 operations=0
+      [33] iface=v4-rmnet_data0 uid=
+10-27 23:47:48.514 2443-2665/? I/TetherStatsReporting: combining tether stats
+10-27 23:47:48.514 3186-3216/? D/QtiTetherService/IpaWrapper: getStats(false)
+10-27 23:47:48.544 2443-2665/? D/PMS: releaseWL(7a90341): PARTIAL_WAKE_LOCK  NetworkStats 0x1 null
+10-27 23:47:48.554 2443-2669/? D/NetworkPolicy: backgroundIntent: receive msg: act=com.android.server.action.NETWORK_STATS_UPDATED seq=109891 processed +9ms when=-9ms
+10-27 23:47:48.554 2443-2669/? D/NetworkManagement: isBandwidthControlEnabled: doneSignal.getCount()= 0
+10-27 23:47:49.264 3591-23387/? D/WifiManager: getScanResults: Base Package Name=com.htc.wfcservice, uid=2903
+10-27 23:47:49.264 3591-23387/? D/WFCService: updateWifiNotification scanResult: 0
+10-27 23:47:49.364 2824-2824/? D/TelephonyCallback: SignalStrength: 4
+10-27 23:47:49.364 2824-2824/? D/SIGNAL_ICON: level=4/5
+10-27 23:47:49.364 2443-2443/? D/HtcASN_1.1: onSignalStrengthsChanged...
+10-27 23:47:49.364 2824-2824/? D/StatusBar.NetworkController: dumpIcon[(gone) stat_sys_5signal_4|null stat_sys_wifi_signal_inandout_4 (gone) F]
+10-27 23:47:49.364 3591-3591/? D/WFCService: onSignalStrengthsChanged
+10-27 23:47:49.374 2443-2443/? D/HtcASN_1.1: Keep  0: type=Wi-Fi mSimExist=true mFlightMode=false HtcLevel=4
+10-27 23:47:49.584 2443-2600/? W/SensorService: D/Accel(x, y, z, t) = ( -0.0,   2.5,   9.6, 514631339ms), calendar = 1540698469, sys_time = 514631339ms
+10-27 23:47:50.264 3591-23387/? D/WifiManager: getScanResults: Base Package Name=com.htc.wfcservice, uid=2903
+10-27 23:47:50.264 3591-23387/? D/WFCService: updateWifiNotification scanResult: 0
