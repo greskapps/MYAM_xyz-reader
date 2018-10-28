@@ -1,0 +1,81 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.emilsjolander.components.StickyScrollViewItems.StickyScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/view_padding" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                />
+//              foreground or background needed?
+
+            <LinearLayout
+                android:id="@+id/meta_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:tag="sticky" >
+
+                <TextView
+                    android:id="@+id/article_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="Title"
+                    android:layout_marginStart="@dimen/title_margin"
+                    android:layout_marginEnd="@dimen/title_margin"
+                    android:paddingTop="@dimen/article_title_spacing"
+                    android:ellipsize="end"
+                    android:maxLines="@integer/max_lines"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/article_byline"
+                    tools:text="Date &amp; Author"
+                    android:layout_marginStart="@dimen/title_margin"
+                    android:layout_marginEnd="@dimen/title_margin"
+                    android:paddingBottom="@dimen/article_title_spacing"
+                    android:ellipsize="end"
+                    android:maxLines="@integer/max_lines"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+            </LinearLayout>
+
+                <TextView
+                    android:id="@+id/article_body"
+                    style="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/detail_activity_padding"
+                    android:layout_marginEnd="@dimen/detail_activity_padding"
+                    android:paddingBottom="@dimen/article_title_spacing"
+                    android:textColor="@color/dkgray"
+                    android:textColorLink="@color/colorAccent"
+                    android:textSize="@dimen/detail_body_text_size"
+                    android:lineSpacingMultiplier="@fraction/detail_body_line_spacing_multiplier" />
+
+        </LinearLayout>
+    </com.emilsjolander.components.StickyScrollViewItems.StickyScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/ic_share" />
+
+</android.support.design.widget.CoordinatorLayout>
