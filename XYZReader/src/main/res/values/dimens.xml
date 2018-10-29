@@ -23,5 +23,4 @@
     <integer name="max_lines">2</integer>
     <integer name="gradient_angle">90</integer>
 
-
 </resources>

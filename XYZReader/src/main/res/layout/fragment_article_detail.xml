@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools">
 
+
     <com.emilsjolander.components.StickyScrollViewItems.StickyScrollView
         android:id="@+id/scrollview"
         android:layout_width="match_parent"
