@@ -1,13 +1,14 @@
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools">
 
     <com.emilsjolander.components.StickyScrollViewItems.StickyScrollView
         android:id="@+id/scrollview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:elevation="@dimen/card_elevation"
         android:padding="@dimen/view_padding" >
 
         <LinearLayout
@@ -21,14 +22,15 @@
                 android:layout_height="wrap_content"
                 android:scaleType="centerCrop"
                 android:foreground="@drawable/gradient"
-                android:background="@drawable/image_base" />
+                android:background="@drawable/image_base"
+                android:contentDescription="@string/cd_photo"/>
 
             <LinearLayout
                 android:id="@+id/meta_bar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:tag="sticky" >
+                android:orientation="vertical" >
+                <!--android:tag="sticky" -->
 
                 <TextView
                     android:id="@+id/article_title"
@@ -76,6 +78,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/fab"
         android:layout_gravity="bottom|end"
+        android:elevation="@dimen/fab_elevation"
+        android:layout_margin="@dimen/detail_activity_padding"
         android:src="@drawable/ic_share" />
 
 </android.support.design.widget.CoordinatorLayout>

@@ -10,5 +10,6 @@
     <string name="up">Up</string>
 
     <string name="cd_library">vector image of library</string>
+    <string name="cd_photo">photo image from article</string>
 
 </resources>
